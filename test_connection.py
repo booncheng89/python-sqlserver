@@ -22,7 +22,7 @@ if __name__ == "__main__":
         insert into city(id, name, status) values (3, ?, 1)
         insert into city(id, name, status) values (4, ?, 1)
     """
-    params2 = ['Kuching', 'Sibu', 'Miri', 'Kuala Lumour']
+    params2 = ['Kuching', 'Sibu', 'Miri', 'Kuala Lumpur']
     conn2 = connection(conn_string=conn_string, query= query2, params=params2)
     conn2.exec_query()
 
